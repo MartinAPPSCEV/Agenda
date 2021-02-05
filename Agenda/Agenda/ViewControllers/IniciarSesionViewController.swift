@@ -10,12 +10,27 @@ import UIKit
 
 class IniciarSesionViewController: UIViewController {
 
+    
+    @IBOutlet weak var EmailTextField: UITextField!
+    
+    @IBOutlet weak var ContrasenaTextFiled: UITextField!
+    
+    @IBOutlet weak var IniciarSesionButton: UIButton!
+    
+    @IBOutlet weak var ErrorText: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        errorTextInvisible()
+        
     }
     
+    func errorTextInvisible()  {
+        
+        ErrorText.alpha = 0
+    }
 
     /*
     // MARK: - Navigation
@@ -27,4 +42,6 @@ class IniciarSesionViewController: UIViewController {
     }
     */
 
+    @IBAction func IniciarSesionClick(_ sender: Any) {
+    }
 }

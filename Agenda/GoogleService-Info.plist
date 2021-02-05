@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>592857365818-b0647cgr7es4gjt11umefahvjbmtu33h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.592857365818-b0647cgr7es4gjt11umefahvjbmtu33h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDTiMY3OBInYHDZRLcHiAsQ_rq9EQp_huo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>592857365818</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>cev.Agenda</string>
+	<key>PROJECT_ID</key>
+	<string>agendaapps-c995</string>
+	<key>STORAGE_BUCKET</key>
+	<string>agendaapps-c995.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:592857365818:ios:7643d53a6f277d0a986403</string>
+</dict>
+</plist>

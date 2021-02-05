@@ -47,8 +47,11 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDM-cu-geN">
                                                 <rect key="frame" x="0.0" y="125.99999999999999" width="300" height="40.333333333333329"/>
                                                 <state key="normal" title="Continuar"/>
+                                                <connections>
+                                                    <action selector="IniciarSesionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyn-ws-c1m"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs2-Nx-Kaf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWF-Ea-hUm">
                                                 <rect key="frame" x="0.0" y="181.33333333333331" width="300" height="27.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemRedColor"/>
@@ -89,6 +92,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rsE-fN-aoE" secondAttribute="trailing" constant="50" id="sOd-VZ-fMV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ContrasenaTextFiled" destination="JBE-fe-6q4" id="2WI-s0-KXa"/>
+                        <outlet property="EmailTextField" destination="4dk-0N-zb3" id="6QF-ee-QDz"/>
+                        <outlet property="ErrorText" destination="jWF-Ea-hUm" id="Nzm-rb-XWB"/>
+                        <outlet property="IniciarSesionButton" destination="PDM-cu-geN" id="bpq-qH-e3C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="QCH-tw-UAt">
-                                <rect key="frame" x="50" y="200" width="328" height="388"/>
+                                <rect key="frame" x="50" y="200" width="328" height="438"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrarse" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g24-zE-b5J">
                                         <rect key="frame" x="95.666666666666671" y="0.0" width="136.66666666666663" height="37.666666666666664"/>
@@ -112,15 +121,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Ny3-69-wLW">
-                                        <rect key="frame" x="14" y="87.666666666666686" width="300" height="300.33333333333331"/>
+                                        <rect key="frame" x="14" y="87.666666666666714" width="300" height="350.33333333333326"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nick" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DYE-kB-bzU">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="39"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="38.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-Lu-77j">
-                                                <rect key="frame" x="0.0" y="63" width="300" height="39"/>
+                                                <rect key="frame" x="0.0" y="62.333333333333314" width="300" height="38.666666666666657"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="2Rh-tv-id2"/>
                                                 </constraints>
@@ -128,19 +137,29 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOE-cP-Q5l">
-                                                <rect key="frame" x="0.0" y="126" width="300" height="39"/>
+                                                <rect key="frame" x="0.0" y="124.99999999999999" width="300" height="38.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repetir contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-SC-I7n">
-                                                <rect key="frame" x="0.0" y="189" width="300" height="39"/>
+                                                <rect key="frame" x="0.0" y="187.33333333333331" width="300" height="38.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v25-w3-era">
-                                                <rect key="frame" x="0.0" y="251.99999999999997" width="300" height="48.333333333333343"/>
-                                                <state key="normal" title="Continuar"/>
+                                                <rect key="frame" x="0.0" y="249.99999999999997" width="300" height="37.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Registrarse"/>
+                                                <connections>
+                                                    <action selector="RegistroClick:" destination="eeH-Kd-xKk" eventType="touchUpInside" id="nhG-O0-uUo"/>
+                                                </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2i-uL-JO0">
+                                                <rect key="frame" x="0.0" y="311.33333333333331" width="300" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -152,10 +171,18 @@
                             <constraint firstItem="QCH-tw-UAt" firstAttribute="top" secondItem="utc-f9-7yk" secondAttribute="top" constant="200" id="XCu-YF-d1F"/>
                             <constraint firstItem="QCH-tw-UAt" firstAttribute="leading" secondItem="utc-f9-7yk" secondAttribute="leading" constant="50" id="cUd-mg-8FB"/>
                             <constraint firstItem="utc-f9-7yk" firstAttribute="trailing" secondItem="QCH-tw-UAt" secondAttribute="trailing" constant="50" id="fRG-4F-5d4"/>
-                            <constraint firstItem="utc-f9-7yk" firstAttribute="bottom" secondItem="QCH-tw-UAt" secondAttribute="bottom" constant="250" id="kBf-bf-jhp"/>
+                            <constraint firstItem="utc-f9-7yk" firstAttribute="bottom" secondItem="QCH-tw-UAt" secondAttribute="bottom" constant="200" id="kBf-bf-jhp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XR8-BM-mn1"/>
+                    <connections>
+                        <outlet property="ContraseñaTextField" destination="kOE-cP-Q5l" id="jIr-sz-zrO"/>
+                        <outlet property="EmailTextFiled" destination="NeQ-Lu-77j" id="phO-QY-rZl"/>
+                        <outlet property="ErrorText" destination="G2i-uL-JO0" id="mLi-sq-W6u"/>
+                        <outlet property="NickTextFiled" destination="DYE-kB-bzU" id="HeO-ro-2SW"/>
+                        <outlet property="RegistroButton" destination="v25-w3-era" id="fF1-Ks-ePh"/>
+                        <outlet property="RepetirContraseñaTextField" destination="bb6-SC-I7n" id="cQO-IL-Jc3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHS-bC-81o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
